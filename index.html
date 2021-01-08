@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JD | Home</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-<!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Jessica Dao</a>
+<div class="container">
+  <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">JD</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
+              <a class="nav-link" href="work.html">Work</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -28,19 +30,38 @@
         </div>
       </nav>
 <!--Main Body-->
-<div class="container">
     <div class="row">
-      <div class="col-md-3">
-            <img class="ME, Jessica Dao" src="me.jpeg" class="img-fluid" alt="Responsive image" width="250">
-    </div>
+      <div class="col-3">
+            <img class="ME, Jessica Dao" src="/imgs/me.jpeg" class="img-fluid" alt="Responsive image" width="350">
+      </div>
     <div class="col-9">
-        <p><h3><strong>Hi, I'm Jessica.</strong></h3>
-        A full-time Full-stack Web Development and college student. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sunt minus deserunt mollitia? Assumenda, delectus eos, quos quidem eaque porro quae molestiae dicta maiores quibusdam exercitationem, dignissimos officiis pariatur veritatis.</p>
+      <h1 class= "hi"><strong>Hi, I'm Jessica.</strong></h3>
+        <p class="intro">An eager learner who is seeking a new challenging career after a few years of being in healthcare. I am currently a Full-Stack Web Developer student through the University of Washington Bootcamps. After graduating, I aim to gain job experience in the web development while completing my Bachelor's degree.</p>
+    </div>
+  </div>
+
+  <div class="row2">
+    <div class="col-6">
+      <div class="parksky">
+        <a href="https://vantango.github.io/uw-project1-parksky-app/" target="_blank"><img src="/imgs/parksky.png" alt="Park Sky" style="width:75%">
+        <div class="middle">
+          <div class="text">PARKSKY: See what the nightsky during your visit to a National Park.</div>
+        </div></a>
+      </div>
+    </div>
+    <div class="col-6"></div>
+  </div>
+  <!-- Footer -->
+  <footer>
+  <div class="text-center p-5">
+    <p>© Jessica Dao 2020</p>
+  </div>
+</footer>
+
 </div>
 </div>
-</div>
-</div>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
 </body>
 </html>
