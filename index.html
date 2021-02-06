@@ -6,6 +6,7 @@
     <title>JD | Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -21,6 +22,9 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
@@ -34,28 +38,28 @@
       </div>
     </nav>
 <!--Main Body-->
+<section id = "home">
 <main>
   <img class = "front" src="./imgs/jd.png">
 </main>
-    <div class="row">
+  <div class="row">
     <div class="col-9">
       <h1 class= "hi">HI, I'M JESSICA</h1>
       <p>A FULL-STACK DEVELOPER.</p>
-
     </div>
     <div class="col-3">
       <img src="./imgs/me.jpeg" alt="Me" width="350">
-</div>
+    </div>
   </div>
 </div>
-
+</section>
 
 <!--divider-->
 <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: darkgray;"></path></svg></div>
 
 <!--portfolio-->
-<section id="Portfolio">
-<div class="proj row row-cols-3">
+<section id = "portfolio">
+<div class="port row row-cols-3">
   <div class="col">
     <div class="card">
       <a href="https://vantango.github.io/uw-project1-parksky-app/" target="_blank"><img src="./imgs/ps-400x400.png" class="card-img-top" alt="Park Sky"></a>
@@ -81,17 +85,95 @@
     </div>
   </div>
 </div>
-</div>
 </section>
-
 
 <!--divider-->
 <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: darkgray;"></path></svg></div>
 
+<!--about me-->
+<section id = "aboutme">
+  <div class="container">
+    
+  </div>
+</section>
+
+
+<!--contact-->
+<section id = "contact">
+<div class="container">
+  <h1>Say hi!</h1>
+<!--Contact Form-->
+  <form id="contact-form" method="post" action="contact.php" role="form">
+    <div class="messages"></div>
+    <div class="controls">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Name *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname">Lastname *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_phone">Phone</label>
+                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted"><strong>*</strong> These fields are required.</p>
+            </div>
+        </div>
+    </div>
+</form>
+<!--links-->
+<div class="row">
+  <div class="col-sm-12">
+    <h3>or...</h3>
+    <p>
+      Let's connect on <a href="www.linkedin.com/in/jessicamdao" target="blank"><i class="fa fa-linkedin-square" style="color:#0072b1"></i> LinkedIn</a>
+      Check out my <a href="resume.pdf" target="blank"><i class="fa fa-id-card-o" style="color:black"></i> resume</a>
+    </p>
+  </div>
+</div>
+</div>
+</section>
+
 <!-- Footer -->
 <footer>
   <div class="text-center p-5">
-    <p>© Jessica Dao 2020</p>
+    <p>©Jessica Dao 2021</p>
   </div>
 </footer>
 
