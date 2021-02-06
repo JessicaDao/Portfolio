@@ -9,25 +9,30 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
-<div class="container">
+
+<body id="page-top">
   <!--Nav Bar-->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
         <!--<a class="navbar-brand" href="index.html">JD</a>-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="work.html">Work</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#aboutme">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 <!--Main Body-->
 <main>
   <img class = "front" src="./imgs/jd.png">
@@ -46,13 +51,14 @@
 
 
 <!--divider-->
-  <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: darkgray;"></path></svg></div>
+<div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: darkgray;"></path></svg></div>
 
-<!--projects-->
+<!--portfolio-->
+<section id="Portfolio">
 <div class="proj row row-cols-3">
   <div class="col">
     <div class="card">
-      <a href="https://vantango.github.io/uw-project1-parksky-app/" target="_blank"><img src="./imgs/parksky.png" class="card-img-top" alt="Park Sky" width="5"></a>
+      <a href="https://vantango.github.io/uw-project1-parksky-app/" target="_blank"><img src="./imgs/ps-400x400.png" class="card-img-top" alt="Park Sky"></a>
       <div class="card-body">
         <p class="card-text">An app that allows a user to search for a national park for a given visitation date in the US.</p>
       </div>
@@ -60,7 +66,7 @@
   </div>
   <div class="col">
     <div class="card">
-      <img src="./imgs/coffeenotes.png" class="card-img-top" alt="Coffee Notes" width = "5">
+      <img src="./imgs/cn-400x400.png" class="card-img-top" alt="Coffee Notes">
       <div class="card-body">
         <h5 class="card-title">Still in progress...</h5>
         <p class="card-text">An app that allows a user to journal through their coffee ventures. It is still in the works but I can proudly say it's a work created all on my own.</p>
@@ -69,26 +75,27 @@
   </div>
   <div class="col">
     <div class="card">
-      <img src="..." class="card-img-top" alt="...">
+      <img src="https://earlsribpalace.com/wp-content/uploads/2019/07/coming-soon-store-placeholder-image.gif" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
     </div>
   </div>
 </div>
+</div>
+</section>
 
 
-  <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: darkgray;"></path></svg></div>
+<!--divider-->
+<div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: darkgray;"></path></svg></div>
 
-  <!-- Footer -->
-  <footer>
+<!-- Footer -->
+<footer>
   <div class="text-center p-5">
     <p>© Jessica Dao 2020</p>
   </div>
 </footer>
 
-
+<!--scripts-->  
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
