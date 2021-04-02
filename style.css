@@ -8,7 +8,8 @@
 }
 
 .navbar{
-    padding-bottom: 4%;
+  color: black;
+  background-color: white;
 }
 
 
@@ -23,7 +24,7 @@
 
 }
 .projects {
-  background-color: darkgray;
+  background-color: lightgray;
 }
 
 
@@ -33,7 +34,7 @@
 }
 
 .port {
-  background-color: darkgrey;
+  background-color: lightgrey;
   padding: 5%;
 }
 
@@ -44,4 +45,31 @@
 
 .title {
   padding-top: 10%;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  background-color: #fff;;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  // position: fixed;
+}
+
+.links ul {
+  display: flex;
+}
+
+.social-list__item {
+  list-style: none;
+}
+
+.social-list__link {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  color: #000;
 }
