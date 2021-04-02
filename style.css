@@ -54,13 +54,12 @@ footer {
   background-color: #fff;;
 }
 
-.links {
+.social-links {
   display: flex;
   justify-content: center;
-  // position: fixed;
 }
 
-.links ul {
+.social-links ul {
   display: flex;
 }
 
