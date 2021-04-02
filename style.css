@@ -72,3 +72,23 @@ footer {
   font-size: 1.5rem;
   color: #000;
 }
+
+.contact-break__container {
+  padding: 2rem;
+}
+
+.contact-break {
+  width: 75%;
+  margin: auto;
+}
+
+.contact-title {
+  text-align: center;
+  color: #000;
+}
+
+#contact {
+  margin-left: 25%;
+  margin-right: 25%;
+
+}
