@@ -23,10 +23,6 @@
   margin-right: auto;
 
 }
-.projects {
-  background-color: lightgray;
-}
-
 
 .contact{
     margin: 5px 0px 0px 70px;
@@ -34,7 +30,6 @@
 }
 
 .port {
-  background-color: lightgrey;
   padding: 5%;
 }
 
