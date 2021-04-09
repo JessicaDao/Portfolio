@@ -1,5 +1,7 @@
-.navbar {
-  background-color: lightgray;
+.navbar a{
+  color: #000;
+  background-color: white;
+
 }
 
 .navbar-brand {
@@ -18,8 +20,8 @@
 }
 
 #home {
-  padding-top: 8%;
-  padding-bottom: 3%;
+  padding-top: 15%;
+  padding-bottom: 15%;
 }
 
 .title {
@@ -75,8 +77,31 @@ font-size: 14px;
 }
 
 #aboutme {
-  padding-top: 5%;
+  padding-top: 15%;
+  padding-bottom: 15%;
   margin-left: 20%;
   margin-right: 20%;
   text-align: center;
 }
+
+
+/* .typewriter h1 {
+  color: #000;
+  overflow: hidden; 
+  border-right: .05em solid black; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black }
+} */
