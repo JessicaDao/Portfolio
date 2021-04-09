@@ -85,7 +85,7 @@ font-size: 14px;
 }
 
 
-/* .typewriter h1 {
+.typewriter h1 {
   color: #000;
   overflow: hidden; 
   border-right: .05em solid black; 
@@ -104,4 +104,4 @@ font-size: 14px;
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: black }
-} */
+}
